@@ -1,0 +1,43 @@
+/* @media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+} */
+
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: stretch;
+       
+    }
+
+    .card {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: rgb(3, 136, 63);
+    }
+
+   h1 {
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+    /* margin-top: 50px; */
+   }
+    
+   p {
+    grid-column: 2;
+   }
+
+   img {
+    grid-column: 2;
+   }
+
+   
+}
